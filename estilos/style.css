@@ -89,7 +89,7 @@
     }
 
     #amostraProdutos img{
-        width: 150px;
+        width: 20%;
     }
 
     #tiposProdutos{
@@ -98,7 +98,7 @@
     }
 
     #tiposProdutos img{
-        width: 150px;
+        width: 25%;
         height: 150px;
         border-radius: 50%;
     }

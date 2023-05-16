@@ -11,6 +11,7 @@
     --cor0:#ea9da9;
     --cor01:#ffdfe4; 
     --cor02: #ffc0cb;
+    --cor03: #b34253;
     --font-Pacifico: 'Pacifico', cursive;
 }
 
@@ -47,6 +48,12 @@
         justify-content: space-between;
     }
 
+    header hr{
+        margin-top: 20px;
+        border-color: var(--cor0);
+        opacity: 30%;
+    }
+
     header #divBuscar{
         display: flex;
         padding: 2px;
@@ -62,38 +69,43 @@
     }
 
     header input{
-        width: calc(100% - 20px);
+        text-align: center;
+        width: calc(100% - 30px);
         border: none;
     }
 
     header input:focus{
-        transition: 0.3s;
-        margin-left: 5px;
         border: none;
         box-shadow: none;
         outline: none;
     }
 
-    header .material-symbols-outlined{
-        width: 20px;
+    header #menu{
+        border: 2px solid var(--cor0);
+        border-radius: 8px;
     }
 
-    header .material-symbols-outlined:hover{
+    header #menu:hover{
+        border-color: var(--cor01);
         color: var(--cor01);
     }
 
-    main{
-        height: 500px;
+    header #account_circle{
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 200,
+      'GRAD' 700,
+      'opsz' 48;
     }
 
     #amostraProdutos{
         display: flex;
         overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
         margin: 10px 0 50px 10px;
         padding: 10px;
-        height: 200px;
-        border-radius: 20px 0 0 20px;
+        border-radius: 10px 0 0 10px;
         box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.144);
     }
 
@@ -102,7 +114,48 @@
     }
 
     #amostraProdutos img{
-        width: 200px;
+        width: 250px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.411);
+    }
+
+    .produto{
+        margin: 10px;
+    }
+
+    .produto p{
+        white-space: normal;
+    }
+
+    .dadosProdutos{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .preco{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--cor03);
+    }
+
+    .botaoComprar{
+        background-color: var(--cor0);
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        padding: 10px;
+
+        font-size: 1.1em;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+    }
+
+    .botaoComprar:hover{
+        background-color: var(--cor02);
+        text-shadow: none;
+        cursor: pointer;
     }
 
     #tiposProdutos{

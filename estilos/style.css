@@ -90,14 +90,6 @@
         color: var(--cor01);
     }
 
-    header #account_circle{
-      font-variation-settings:
-      'FILL' 1,
-      'wght' 200,
-      'GRAD' 700,
-      'opsz' 48;
-    }
-
     #amostraProdutos{
         display: flex;
         overflow-x: auto;

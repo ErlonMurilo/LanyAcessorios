@@ -17,7 +17,7 @@
 
 @media screen and (max-width:600px) {
     header{
-        height: 400px;
+        height: 300px;
         background-image: linear-gradient(to bottom,  black 30%, transparent), url(../imagens/joias.jpeg);
         -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%);
         background-size: cover;
@@ -145,6 +145,7 @@
         border-radius: 20px;
         width: 100px;
         padding: 10px;
+        text-align: center;
 
         font-size: 1.1em;
         font-weight: bolder;
@@ -161,13 +162,59 @@
     #tiposProdutos{
         background-color: #ffdfe4;
         box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.438);
+        padding: 20px;
+        padding-right: 0px;
+        margin-bottom: 50px;
     }
 
     #tiposProdutos img{
-        width: 25%;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
     }
+
+    #tiposProdutos p{
+        font-family: var(--font-Pacifico);
+        color: var(--cor03);
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 5px;
+    }
+
+    #tiposAcessorios{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .tipo{
+        margin: 20px;
+    }
+
+    #botao{
+        background-color: var(--cor0);
+        border: none;
+        border-radius: 20px;
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+
+        font-size: 1.1em;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+    }
+
+    #botao:hover{
+        background-color: var(--cor02);
+        text-shadow: none;
+        cursor: pointer;
+    }
+
 
     footer{
         padding: 15px 0px;

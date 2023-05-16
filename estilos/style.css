@@ -189,6 +189,10 @@
         white-space: nowrap;
     }
 
+    #tiposAcessorios::-webkit-scrollbar {
+        display: none;
+    }
+
     .tipo{
         margin: 20px;
     }

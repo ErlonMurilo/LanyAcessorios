@@ -7,20 +7,35 @@
         <title>Lany Acessorios</title>
         <link rel="stylesheet" href="estilos/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <script src="scripts/funcoes_menu.js"></script>
     </head>
     <body>
         <header>
             <div id="cabecalho">
-                <span id="menu" class="material-symbols-outlined">menu</span>
+                <span id="menu" class="material-symbols-outlined" onclick="abrir_fechar_menu()">menu</span>
                 <a href="index.html"><h1>Lany Acessórios</h1></a>
                 <span id="account_circle" class="material-symbols-outlined">account_circle</span>
             </div>
+            <menu>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Cartegorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                </ul>
+                <div id="imagens_menu">
+                    <a href="https://api.whatsapp.com/send/?phone=5583999166936&text&type=phone_number&app_absent=0"><img src="imagens/whatsapp-logo-branco-pequeno.png" alt="whatsapp-logo-branco-pequeno"></a>
+                    <a href="https://www.instagram.com/lany.acessorio/" target="_blank" rel="external"><img src="imagens/instagram-logo-branco-pequeno.png" alt="instagram-logo-branco-pequeno"></a>
+                </div>
+            </menu>
             <hr>
             <div id="divBuscar">
                 <input type="text" name="buscar" id="buscar" placeholder="Digite o que você esta procurando...">
                 <span class="material-symbols-outlined">search</span>
             </div>
         </header>
+
+
         <main>
             <section id="amostraProdutos">
                 <div class="produto">

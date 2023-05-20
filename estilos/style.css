@@ -9,9 +9,10 @@
 
 :root{
     --cor0:#ea9da9;
-    --cor01:#ffdfe4; 
+    --cor01:#ffdfe4;
     --cor02: #ffc0cb;
     --cor03: #b34253;
+    --cor04:#ea9da979;
     --font-Pacifico: 'Pacifico', cursive;
 }
 
@@ -19,11 +20,11 @@
     header{
         height: 300px;
         background-image: linear-gradient(to bottom,  black 30%, transparent), url(../imagens/joias.jpeg);
-        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%);
+        /* -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%); */
         background-size: cover;
         padding: 10px;
     }
-    
+
     header span{
         color: var(--cor0);
     }
@@ -48,6 +49,52 @@
         justify-content: space-between;
     }
 
+    menu{
+        left: 0;
+        width: 60vw;
+        height: 85%;
+        display: none;
+        position: absolute;
+        top: 15.5%;
+        background: rgb(44, 44, 44);
+    }
+
+    menu ul{
+        list-style-type: none;
+    }
+
+    menu a{
+        padding: 10px;
+        color: white;
+    }
+
+    menu li{
+        padding: 10px 0px;
+        border-top: 1px solid var(--cor04);
+        border-width: 100%;
+    }
+
+    menu li:hover{
+        background: rgb(68, 68, 68);
+    }
+
+    menu #imagens_menu{
+        box-sizing: border-box;
+        background-color: var(--cor04);
+        text-align: right;
+        width: 100%;
+        padding: 10px 10px;
+        border-top: 1px solid var(--cor04);
+        position: absolute;
+        bottom: 0%;
+    }
+    menu #imagens_menu a{
+        padding: 0;
+    }
+    menu #imagens_menu a img{
+        padding-right: 0;
+    }
+
     header hr{
         margin-top: 20px;
         border-color: var(--cor0);
@@ -64,7 +111,6 @@
         width: 80vw;
         background-color: white;
         border-radius: 20px;
-        border: 2px solid var(--cor0);
         margin-top: 60px;
     }
 
@@ -78,16 +124,6 @@
         border: none;
         box-shadow: none;
         outline: none;
-    }
-
-    header #menu{
-        border: 2px solid var(--cor0);
-        border-radius: 8px;
-    }
-
-    header #menu:hover{
-        border-color: var(--cor01);
-        color: var(--cor01);
     }
 
     #amostraProdutos{
@@ -216,27 +252,27 @@
         background-color: black;
         text-align: left;
     }
-    
+
     footer ul{
         list-style-type: none;
         max-width: 300px;
         margin: auto;
     }
-    
+
     footer a{
         color: var(--cor02);
         font-weight: bold;
         text-decoration: none;
     }
-    
+
     footer a:hover{
         text-decoration: underline;
     }
-    
+
     .liDev{
         padding-top: 20px;
     }
-    
+
     .liTitulo{
         padding-bottom: 20px;
     }
@@ -250,7 +286,7 @@
         background-size: cover;
         padding: 10px;
     }
-    
+
     header span{
         color: var(--cor0);
     }
@@ -325,7 +361,7 @@
     }
 
     #amostraProdutos img{
-        
+
         width: 300px;
     }
 
@@ -346,27 +382,27 @@
         background-color: black;
         text-align: left;
     }
-    
+
     footer ul{
         list-style-type: none;
         max-width: 300px;
         margin: auto;
     }
-    
+
     footer a{
         color: var(--cor02);
         font-weight: bold;
         text-decoration: none;
     }
-    
+
     footer a:hover{
         text-decoration: underline;
     }
-    
+
     .liDev{
         padding-top: 20px;
     }
-    
+
     .liTitulo{
         padding-bottom: 20px;
     }

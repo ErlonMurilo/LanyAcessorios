@@ -49,6 +49,10 @@
         justify-content: space-between;
     }
 
+    header #cabecalho .material-symbols-outlined{
+        font-size: 28px;
+    }
+
     menu{
         left: 0;
         top: 0;
@@ -80,6 +84,7 @@
     }
 
     menu li:hover{
+        cursor: pointer;
         background: rgb(68, 68, 68);
     }
 
@@ -102,8 +107,7 @@
 
     header hr{
         margin-top: 20px;
-        border-color: var(--cor0);
-        opacity: 30%;
+        border-color: var(--cor04);
     }
 
     header #divBuscar{
